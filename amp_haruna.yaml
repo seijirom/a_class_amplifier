@@ -1,0 +1,5 @@
+---
+target: amp_haruna
+reference: amp_haruna_reference.cir
+netlist: "/home/anagix/work/YSS_PMOS/a_class_amplifier/amp_haruna.net"
+schematic: "/home/anagix/work/YSS_PMOS/a_class_amplifier/amp_haruna.asc"

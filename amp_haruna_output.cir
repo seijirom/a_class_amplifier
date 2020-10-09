@@ -1,0 +1,28 @@
+* Created by KLayout
+
+* cell pmos_amp1
+.SUBCKT pmos_amp1
+* net 9 SUBSTRATE
+* device instance $1 r180 *1 -776,1317 RES
+R$1 4 5 20685
+* device instance $2 r0 *1 -790,1603.5 RES
+R$2 9 6 3004.16666667
+* device instance $26 r0 *1 -360,1579 RES
+R$26 1 9 9975
+* device instance $27 r90 *1 -620.299,1096 RES
+R$27 3 4 4500.965
+* device instance $29 r90 *1 -624.5,1539.5 RES
+R$29 5 9 9975
+* device instance $30 r0 *1 11,501.5 RES
+R$30 4 7 1000
+* device instance $40 m0 *1 -423.5,1283 PMOS
+M$40 4 3 1 9 PMOS L=10U W=1800U AS=22800P AD=22800P PS=2456U PD=2456U
+* device instance $58 r0 *1 178,829 PMOS
+M$58 9 7 7 9 PMOS L=10U W=1800U AS=22800P AD=22800P PS=2456U PD=2456U
+* device instance $76 r180 *1 1913.5,-256 PMOS
+M$76 2 1 4 9 PMOS L=10U W=45000U AS=555000P AD=555000P PS=58600U PD=58600U
+* device instance $526 r180 *1 1226.5,1325 PMOS
+M$526 9 7 2 9 PMOS L=10U W=45000U AS=555000P AD=555000P PS=58600U PD=58600U
+* device instance $976 r180 *1 -912.5,1285 PMOS
+M$976 3 5 6 9 PMOS L=10U W=27000U AS=333000P AD=333000P PS=35160U PD=35160U
+.ENDS pmos_amp1

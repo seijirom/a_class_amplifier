@@ -1,0 +1,32 @@
+Circuit: * Z:\home\anagix\work\YSS_PMOS\a_class_amplifier\amp_haruna.asc
+
+Warning: Pd = 0 is less than W.
+Warning: Ps = 0 is less than W.
+Warning: A2 = 0 is too small. Setting to 0.01.
+Warning: nsub is ignored because k1 or k2 is given.
+Warning: xt is ignored because k1 or k2 is given.
+Direct Newton iteration for .op point succeeded.
+.step l20=1e-005
+.step l20=2e-005
+.step l20=3e-005
+.step l20=4e-005
+.step l20=5e-005
+.step l20=6e-005
+
+Date: Fri Oct 09 14:41:34 2020
+Total elapsed time: 0.276 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 2101
+traniter = 2092
+tranpoints = 1042
+accept = 1042
+rejected = 0
+matrix size = 12
+fillins = 0
+solver = Normal
+Matrix Compiler1: 724 bytes object code size  0.3/0.2/[0.2]
+Matrix Compiler2: 1.01 KB object code size  0.2/0.3/[0.2]
+

@@ -1,0 +1,28 @@
+* Z:\home\anagix\work\YSS_PMOS\a_class_amplifier\amp_haruna.asc
+M13 N010 N009 N004 N001 YSS_PMOS l=10u w=100u m=270
+R3 N001 N009 10k
+R4 N009 0 20k
+R5 N002 N004 30
+R6 N001 N002 3k
+R7 N010 0 4.5k
+M14 0 N010 N005 N001 YSS_PMOS l=10u w=100u m=18
+R8 N001 N005 10k
+M15 N006 N003 N001 N001 YSS_PMOS l=10u w=100u m=450
+M16 N003 N003 N001 N001 YSS_PMOS l=10u w=100u m=18
+R13 N003 0 1k
+M17 0 N005 N006 N001 YSS_PMOS l=10u w=100u m=450
+C1 N001 N002 {100µ}
+C2 N009 N008 {100µ}
+C3 N007 N006 {1000µ}
+V1 N001 0 10
+V2 N008 0 SINE 0 0.11 1k AC 1
+R1 N007 0 8
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\anagix\My Documents\LTspiceXVII\lib\cmp\standard.mos
+* .step param r1k list  100k 200k
+.include models/pmos
+.tran 10m
+.step param l20 10u 60u 10u
+.backanno
+.end
